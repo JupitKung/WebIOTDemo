@@ -1,25 +1,16 @@
 {
-	"Params": {
-		"DevMode": {
-			"Instrumentation": {
-				"command": "",
-				"env": {
-					"BLUEMIX_APP_MGMT_ENABLE": "devconsole+shell+inspector",
-					"NODE_ENV": "development"
-				},
-				"memory": "384M"
-			},
-			"Packager": "com.ibm.perfectstorm.cloudoe.packager.LiveEditDeploymentPackager"
-		},
-		"Name": "ASPNETDEmo",
-		"Target": {
-			"Url": "https://api.eu-gb.bluemix.net",
-			"Org": "40f4e4b6-6da9-4c78-83ee-84fe69fa821f",
-			"Space": "90e46bf4-62a9-42d1-9a6b-0994ebf8a376"
-		},
-		"Timeout": 60
-	},
-	"Path": "",
-	"ServiceId": "com.ibm.cloudoe.orion.client.deploy",
-	"Type": "Cloud Foundry"
+  "ServiceId": "com.ibm.cloudoe.orion.client.deploy",
+  "Params": {
+    "Target": {
+      "Url": "https://api.ng.bluemix.net",
+      "Org": "praiyakung@gmail.com",
+      "Space": "devIOTTest99"
+    },
+    "Name": "WebIOTDemo",
+    "Instrumentation": {
+      "domain": "mybluemix.net"
+    }
+  },
+  "Path": "manifest.yml",
+  "Type": "Cloud Foundry"
 }
